@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.boyko.darya'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def restAssuredVersion = "5.3.0"
+
+dependencies {
+    testImplementation ('org.junit.jupiter:junit-jupiter-api:5.8.1',
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "io.rest-assured:json-schema-validator:$restAssuredVersion")
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
