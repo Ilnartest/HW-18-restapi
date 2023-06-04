@@ -1,4 +1,4 @@
-package ru.boyko.darya;
+package ru.ilnar;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

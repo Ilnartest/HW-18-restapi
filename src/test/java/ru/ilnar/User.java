@@ -1,4 +1,4 @@
-package ru.boyko.darya;
+package ru.ilnar;
 
 public class User {
 
